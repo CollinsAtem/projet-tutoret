@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+/* :root {
+    --background: url(img/bg.png)no-repeat center/cover;
+} */
+
+html {
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    width: 65%;
+    height: 85vh;
+    /* border: 1px solid #000; */
+    margin: auto;
+    transition: .3s linear;
+}
+
+ .content {
+    position: relative;
+    width: 100%;
+    height: 93%;
+    /* border: 1px solid #000; */
+    z-index: 5;
+}
+.content::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    background: var(--background);
+    background-position-y: 0px;
+    transform: scaleX(-1);
+    border-radius: 20px;
+    z-index: -1;
+}
+
+.content .choose_bx {
+    position: relative;
+    width: 95%;
+    height: auto;
+    margin: auto;
+    /* border: 1px solid #000; */
+}
+.content .choose_bx .stay_bx {
+    display: flex;
+    align-items: center;
+}
+.content .choose_bx .stay_bx button {
+    padding: 10px 30px;
+    background: #000;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: .3s linear;
+}
+
+.content .choose_bx .stay_bx button:hover {
+    background: #fff;
+    color: #000;
+}
+
+.content .choose_bx .stay_bx button:nth-child(1) {
+    border-radius: 10px 0px 0px 0px;
+    background: #fff;
+    color: #000;
+}
+
+.content .choose_bx .stay_bx button:nth-last-child(1) {
+    border-radius: 0px 10px 0px 0px;
+}
+
+.content .choose_bx .stay_bx button i {
+    margin-right: 5px;
+}
+
+.content .choose_bx .select {
+    /* width: 100%; */
+    height: auto;
+    background: #fff;
+    border-radius: 0px 10px 10px 10px;
+    position: relative;
+    padding: 10px 20px;
+    box-shadow: 8px 10px 15px 15px rgb(214, 214, 214);
+    z-index: 2;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    /* display: grid; */
+    /* grid-template-columns: repeat(auto-fit, minmax(350px,1115fr)); */
+    grid-template-columns: repeat(auto-fit, minmax(30px,1fr));
+    gap: -5500px;
+}
+
+.content .choose_bx .select .card {
+    width: auto;
+    height: auto;
+    border: 2px solid rgb(226, 226, 226, .7);
+    border-radius: 10px;
+    padding: 10px 0px 10px 30px;
+}
+
+.choose_bx .select .card:nth-child(1) {
+    width: 18%;
+}
+.choose_bx .select .card:nth-child(1) select{
+    width: 100%;
+}
+.choose_bx .select .card:nth-child(2) {
+    width: 40%;
+}
+.choose_bx .select .card:nth-child(3) {
+    width: 40%;
+}
+.choose_bx .select .card:nth-last-child(1) {
+    width: 40%;
+}
+.choose_bx .select .card:nth-child(4){
+    width: 18%;
+}
+.content .choose_bx .select .card:nth-child(5) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    height: auto;
+    margin-top: 10px;
+    width: 40%;
+}
+.content .choose_bx .select .card h5 {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.content .choose_bx .select .card input {
+    border: none;
+    outline: none;
+    margin-top: 5px;
+    font-size: 20px;
+    font-weight: 700;
+    background: none;
+    font-family: 'Poppins', sans-serif;
+}
+.content .choose_bx .select .card select {
+    border: none;
+    outline: none;
+    margin-top: 5px;
+    font-size: 18px;
+    font-weight: 700;
+    background: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.content .choose_bx .select .card input:nth-child(3) {
+    font-size: 12px;
+    font-weight: 500;
+    color: gray;
+}
+
+.content .choose_bx .select .card button {
+    border: none;
+    background: none;
+    outline: none;
+    margin-right: 20px;
+    margin-top: 5px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: .3s linear;
+}
+
+.content .choose_bx .select .card button:hover {
+    border-bottom: 2px solid rgb(177, 177, 177);
+}
+
+
+.content .choose_bx .select .card:nth-child(3) .date {
+    position: relative;
+    display: flex;
+    align-items: center;
+    /* border: 1px solid #000; */
+}
+
+.content .choose_bx .select .card:nth-child(3) .date input {
+    width: 25px;
+    height: 30px;
+    margin-left: 10px;
+    z-index: 999999999999999999999999;
+    opacity: 0;
+}
+
+.content .choose_bx .select .card:nth-child(3) .date i {
+    position: absolute;
+    left: 85%;
+    font-size: 23px;
+    z-index: -1;
+}
+
+.content .choose_bx .select .card:nth-child(3) .date h3 {
+    width: 120px;
+}
+
+.content .choose_bx .select .card:nth-child(3) .date h5 {
+    font-size: 13px;
+    font-weight: 600;
+}
+/* ==Buttons rechercher=== */
+.chercher button{
+   outline: none;
+   border: none;
+   background: white;
+   position: absolute;
+   width: auto;
+   height: auto;
+   background: #fff;
+   box-shadow: 4px 4px 25px gray;
+   border-radius: 8px;
+   padding: 18px 40px;
+   left:75%;
+   top: 240px;
+   z-index: 999;
+   align-items: -50%;
+   justify-content: center;
+   cursor: pointer;
+}
+.chercher button:hover{
+    color: white;
+    background: rgb(230, 221, 98);
+    box-shadow: 5px 15px 35px rgb(235, 232, 80);
+    transform: translateY(-5px);
+    transition: ease;
+}
+
+
+
+.map {
+    position: relative;
+    width: 100%;
+    height: 380px;
+    /* border: 1px solid #000; */
+    top: -130px;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.map iframe {
+    opacity: .8;
+}
+
+.map::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 15%;
+    background: linear-gradient(0deg, transparent, #fff);
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.map::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 15%;
+    background: linear-gradient(180deg, transparent, #fff);
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.map .address_bx {
+    position: absolute;
+    width: 240px;
+    height: 65px;
+    background: #fff;
+    box-shadow: 4px 4px 25px gray;
+    border-radius: 8px;
+    padding: 0px 20px;
+    top: 44%;
+    left: 30%;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.map .address_bx .bi {
+    font-size: 25px;
+}
+
+.home {
+    position: relative;
+    width: 65%;
+    height: 230px;
+    margin: auto;
+    /* border: 1px solid #000; */
+    top: -220px;
+    z-index: 2;
+}
+
