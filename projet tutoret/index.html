@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--====== Le Lien a mon font awesome css===== -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+
+    <!-- ======== Icon sur la barre de navigation ======= -->
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <!-- ======== Boxicons ======= -->
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- ======== Slider Js ======= -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.7.5/swiper-bundle.min.css"
+    />
+
+    <!-- ======== StyleSheet ======= -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Keyce Airline</title>
+  </head>
+  <body>
+    <!-- le Preloader -->
+    <div class="loader">
+      <img src="./images/preloader.gif" alt="" />
+    </div>
+    <!--notre header -->
+    <header class="header" id="header">
+      <!-- le nav bar de navigation -->
+      <div class="navigation">
+        <nav class="nav d-flex">
+          <div class="logo">
+            <a href="/">
+              <img src="./images/keyce logo.png" />
+            </a>
+          </div>
+          <ul class="nav-list d-flex">
+            <li class="nav-item">
+              <a href="#header" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">Réservation</a>
+            </li>
+            <li class="nav-item">
+              <a href="#popular-destination" class="nav-link">Acheter un billet</a>
+            </li>
+            <li class="nav-item">
+              <a href="#trips" class="nav-link">Tourisme</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Information</a>
+            </li>
+          </ul>
+
+          <a href="#" class="btn sign-up">Inscription</a>
+
+          <div class="hamburger">
+            <i class="bx bx-menu-alt-left"></i>
+          </div>
+        </nav>
+      </div>
+
+      <!--le Hero page-->
+      <div class="swiper-container slider-1">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./images/pic-1.jpg" alt="" />
+          </div>
+
+          <div class="swiper-slide">
+            <img src="./images/pic-5.jpg" alt="hero image" />
+          </div>
+          <div class="swiper-slide">
+            <video muted loop autoplay>
+              <source src="./images/video-2.mp4" type="video/mp4" />
+              <source src="./images/video-2.webm" type="video/webm" />
+            </video>
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/pic-6.jpg" alt="hero image" />
+          </div>
+
+          <div class="swiper-slide">
+            <video muted loop autoplay>
+              <source src="./images/video-3.mp4" type="video/mp4" />
+              <source src="./images/video-3.webm" type="video/webm" />
+            </video>
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/hero-3.jpg" alt="" />
+          </div>
+
+          <div class="swiper-slide">
+            <video muted loop autoplay>
+              <source src="./images/video-1.mp4" type="video/mp4" />
+              <source src="./images/video-1.webm" type="video/webm" />
+            </video>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <h1>
+          Soyez pret pour un<br />
+          Voyage Inoubliable
+        </h1>
+        <a href="#" class="btn">Réservation</a>
+      </div>
+       <!-- les fleches de next -->
+      <div class="arrows d-flex">
+        <div class="swiper-prev d-flex">
+          <i class="bx bx-chevron-left swiper-icon"></i>
+        </div>
+        <div class="swiper-next d-flex">
+          <i class="bx bx-chevron-right swiper-icon"></i>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+
+      <!-- Section de rabais -->
+      <section class="section discount">
+        <div class="overlay">
+          <video class="video">
+            <source src="./images/hero-2.m4v" type="video/mp4" />
+            <source src="./images/hero-2.webm" type="video/webm" />
+          </video>
+        </div>
+        <div class="content">
+          <h1>
+            Moins 15% sur votre prochain <br />
+            billet d'avions 
+          </h1>
+          <a href="#" class="btn">Découvrir</a>
+          <span class="video-control d-flex"><i class="bx bx-play"></i></span>
+        </div>
+      </section>
+      
+      <!-- Section des destination populaire -->
+      <section id="popular-destination">
+        <h1 class="title">destinations populaires</h1>
+        <div class="content">
+            <!-- box -->
+            <div class="box">
+                <img src="images/paris.jpg" alt="">
+                <div class="content2">
+                    <div>
+                        <h4>Paris</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p>Ea iusto ipsa repudiandae amet conseq.</p>
+                        <a href="#">Lire Plus</a>
+                    </div>
+                </div>
+            </div>
+            <!-- box -->
+            <!-- box -->
+            <div class="box">
+                <img src="images/moscou.jpg" alt="">
+                <div class="content">
+                    <div>
+                        <h4>Moscou</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p>Ea iusto ipsa repudiandae amet conseq.</p>
+                        <a href="#">Lire Plus</a>
+                    </div>
+                </div>
+            </div>
+            <!-- box -->
+            <!-- box -->
+            <div class="box">
+                <img src="images/miami.jpg" alt="">
+                <div class="content2">
+                    <div>
+                        <h4>Miami</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p>Ea iusto ipsa repudiandae amet conseq.</p>
+                        <a href="#">Lire Plus</a>
+                    </div>
+                </div>
+            </div>
+            <!-- box -->
+             <!-- box -->
+             <div class="box">
+                <img src="images/los-angeles.jpg" alt="">
+                <div class="content">
+                    <div>
+                        <h4>Los-Angeles</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p>Ea iusto ipsa repudiandae amet conseq.</p>
+                        <a href="#">Lire Plus</a>
+                    </div>
+                </div>
+            </div>
+            <!-- box -->
+             <!-- box -->
+             <div class="box">
+                <img src="images/rome.jpg" alt="">
+                <div class="content2">
+                    <div>
+                        <h4>Rome</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p>Ea iusto ipsa repudiandae amet conseq.</p>
+                        <a href="#">Lire Plus</a>
+                    </div>
+                </div>
+            </div>
+            <!-- box -->
+             <!-- box -->
+             <div class="box">
+                <img src="images/tokio.jpg" alt="">
+                <div class="content">
+                    <div>
+                        <h4>Tokyo</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p>Ea iusto ipsa repudiandae amet conseq.</p>
+                        <a href="#">Lire Plus</a>
+                    </div>
+                </div>
+            </div>
+            <!-- box -->
+        </div>
+    </section>
+
+      <!--Section des voyage -->
+      <section class="section trip" id="trips">
+        <div class="title">
+          <h1>
+            Voyager <br />
+            Avec Nous
+          </h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+            deserunt quaerat quasi earum veniam. Accusamus velit adipisci quidem
+            obcaecati molestiae.
+          </p>
+        </div>
+
+        <div class="row container">
+          <div class="swiper-container slider-3">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./images/vert-1.jpg" alt="hero image" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/vert-2.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/vert-3.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/vert-4.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/vert-5.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/vert-6.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/vert-7.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="custom-next d-flex">
+            <i class="bx bx-chevron-right swiper-icon"></i>
+          </div>
+          <div class="custom-prev d-flex">
+            <i class="bx bx-chevron-left swiper-icon"></i>
+          </div>
+          <div class="custom-pagination d-flex"></div>
+        </div>
+        <div class="explore">
+          <a href="#" class="btn">Tout Explorer</a>
+        </div>
+      </section>
+      <!--  Section Infos inscription-->
+      <section class="section newsletter">
+        <div class="row container">
+          <div class="col">
+            <h2>Inscription au Information Journalière</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+              laborum fugiat, voluptatem eligendi dolorum distinctio.
+            </p>
+          </div>
+          <form class="form">
+            <div>
+              <input type="email" placeholder="Votre Email" />
+              <button>S'inscrire</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- Section de contact -->
+      <section class="section contact" id="contact">
+        <div class="heading">
+          <h1  class="wow animate_animated animate_fadeInup">
+              Vous Voulez Une Experience Particuliere?
+              <span>Contacter Nous </span>
+          </h1>
+          </div>
+          <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing 
+          elit. Est sed odio, nam, nostrum in tempora ipsum 
+          nihil maxime fuga quia tempore obcaecati expedita
+           mollitia voluptates adipisci. Mollitia labore temporibus similique!
+          </p>
+        
+
+        <div class="location container">
+          <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1673.6571616930753!2d11.511819135332678!3d3.884981312166456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x108bcf2ea2949321%3A0x88c444c50c3d0bc5!2sKeyce%20Informatique%20et%20Intelligence%20Artificielle!5e0!3m2!1sfr!2scm!4v1675951890969!5m2!1sfr!2scm" 
+          width="600" 
+          height="450" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <img class="logo2" src="images/keyce logo.png" alt="logo">
+      <div class="menu">
+      <ul>
+          <li class="main-link">
+              <a href="#">A Propos</a>
+          </li>
+          <li><a href="#"><p> Formation des hotesse</p></a></li>
+          <li><a href="#"><p>Service en cabine</p></a></li>
+          <li><a href="#"><p>Contacter Nous</p></a></li>
+          <li><a href="#"><p>Les Horraire</p></a></li>
+          <li><a href="#"><p>Mon Compte</p></a></li>
+
+      </ul>
+      <ul>
+          <li class="main-link">
+              <a href="#">Avions</a>
+          </li>
+          <li> <a href="#"><p>Places et Sieges</p></a></li>
+          <li> <a href="#"><p>Notre Gallery</p></a></li>
+          <li> <a href="#"><p>Les Pilotes</p></a></li>
+          <li> <a href="#"><p>Nos Repas</p></a></li>
+      </ul>
+      <ul>
+          <li class="main-link">
+              <a href="#">Destination</a>
+            </li>
+            <li><a href="#"><p>Monnaie et conversion</p></a></li>
+            <li><a href="#"><p>Aeroport</p></a></li>
+            <li><a href="#"><p>Ville</p></a></li>
+      </ul>
+      <ul>
+          <li class="main-link">
+              <a href="#">Hotels</a>
+              <li><a href="#"><p>Deplacement automobile</p></a></li>
+              <li><a href="#"><p>Les villes</p></a></li>
+              <li><a href="#"><p>Réserver</p></a></li>
+          </li>
+      </ul> 
+      <ul>
+          <li class="main-link">
+              <a href="#">Installer l'application</a>
+          </li>
+          <li><p>Télécharger sur PlayStore & AppStore</p></li>
+          <!-- <div class="row"> -->
+            <!-- playstore et appstore -->
+            <li><img src="images/appdownload.png" alt=""></li>
+          <!-- </div> -->
+           <li><p>Payement Des Billet d'Avions Sécuriser Par:</p></li>
+          <li><img src="images/payement.png" alt=""></li>
+      </ul>
+      
+      </div>
+      <div class="social-media">
+        <li>
+        <h4>Suivez-Nous</h4>
+        <div class="reseau">
+          <img src="images/facebook.gif" alt="">
+          <img src="images/twitter.gif" alt="">
+          <img src="images/instagram.gif" alt="">
+          <img src="images/linkedin.gif" alt="">
+        </div>
+      </li>
+      <i class="fab fa-instagram"></i>
+      <i class="fa-brands fa-pinterest"></i>
+      <i class="fab fa-Linkedin"></i>
+      <i class="fab fa-pinterest-p"></i>
+      </div> 
+      <div class="footer-bottom">
+      <div class="container">
+        <a href="#">Politique et confidentialité</a>
+        <div>
+          <a href="#">
+              <img src="images/keyce logo.png" class="logo" alt="logo"/>
+          </a>
+          <p>
+              <span class="year"></span>
+              &copy;Keyce Airways Inc. Tous Droits Reserver 2023.
+          </p>
+         </div> 
+         <a href="#">Terms &amp; Conditions</a>
+      </div>
+      </div>
+      </footer>
+
+
+    <!-- ======== SwiperJS ======= -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.7.5/swiper-bundle.min.js"></script>
+    <!-- ======== SCROLL REVEAL ======= -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js"></script>
+    <!-- ====Le lien a mon font awesome ====== -->
+    <script src="https://kit.fontawesome.com/c31fddc589.js" crossorigin="anonymous"></script>
+    <!-- ======== SliderJS ======= -->
+    <script src="js/slider.js"></script>
+    <!-- ======== IndexJS ======= -->
+    <script src="js/index.js"></script>
+  </body>
+</html>
